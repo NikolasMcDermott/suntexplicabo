@@ -1,0 +1,43 @@
+{
+  "name": "suntexplicabo",
+  "version": "1.0.0",
+  "description": "RQL query object and serializer written in TypeScript",
+  "scripts": {
+    "analyse": "node_modules/.bin/tslint --project ./tslint.json -e **/__tests__/**",
+    "fix-style": "node_modules/.bin/tslint --fix --project ./tslint.json",
+    "build": "tsc && babel src --ignore node_modules --out-dir dist --extensions '.ts' --minified",
+    "run-tests": "jest",
+    "test": "npm run build && npm run run-tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NikolasMcDermott/suntexplicabo.git"
+  },
+  "keywords": [
+    "rql",
+    "typescript",
+    "adipisci"
+  ],
+  "author": "TavaresLang",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.7.0",
+    "@babel/core": "^7.7.2",
+    "@babel/plugin-proposal-class-properties": "^7.7.0",
+    "@babel/preset-env": "^7.7.1",
+    "@babel/preset-typescript": "^7.7.2",
+    "@types/jest": "^24.0.23",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.1.0",
+    "ts-node": "^7.0.1",
+    "tslint": "^5.12.0",
+    "typescript": "^2.6.2"
+  },
+  "dependencies": {
+    "locutus": "^2.0.10",
+    "lodash": "^4.17.11"
+  },
+  "files": [
+    "dist/*"
+  ]
+}
